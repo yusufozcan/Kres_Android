@@ -1,0 +1,1 @@
+include ':kres_veli', ':KresOrtak', ':kres_ogretmen'

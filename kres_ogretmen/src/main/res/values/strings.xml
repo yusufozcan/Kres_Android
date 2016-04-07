@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Kres Ogretmen</string>
+
+    <string name="title_activity_foto_cek">FotoCek</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

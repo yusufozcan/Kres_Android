@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.arappca.kresogretmen.Activities.MesajGonder">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/viewStub">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lnEklenenResimler">
+
+            <TextView
+                android:id="@+id/lblMesajHedefi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtMesaj"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="false"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/txtMesaj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgGonder"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="false"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/imgResimSec"
+                android:hint="Mesajınızı buraya yazın" />
+
+            <ImageView
+                android:id="@+id/imgResimSec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgGonder"
+                android:layout_toLeftOf="@+id/imgGonder"
+                android:src="@android:drawable/ic_menu_camera" />
+
+            <ImageView
+                android:id="@+id/imgGonder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:src="@android:drawable/ic_menu_send" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/svEklenenResimler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp">
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/lnEklenenResimler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"></LinearLayout>
+
+    </RelativeLayout>
+
+    <ViewStub
+        android:id="@+id/viewStub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Kres</string>
+    <string name="title_ıtem_list">Items</string>
+    <string name="title_ıtem_detail">Item Detail</string>
+</resources>

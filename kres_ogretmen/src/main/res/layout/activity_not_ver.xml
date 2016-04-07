@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.arappca.kresogretmen.Activities.NotVer">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnOlumlu"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:background="@drawable/leftroundedbutton"
+            android:capitalize="words"
+            android:text="Olumlu"
+            android:textAllCaps="false"
+
+            android:textColor="#FFFFFF"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btnOlumsuz"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:background="@drawable/rightroundedtransparentbutton"
+            android:text="Olumsuz"
+            android:textAllCaps="false"
+            android:textColor="#0590ff"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/grdDersler"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="10dp"
+        android:columnWidth="100dp"
+        android:numColumns="auto_fit" />
+
+</RelativeLayout>

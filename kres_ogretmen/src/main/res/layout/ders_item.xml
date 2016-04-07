@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative"
+    android:layout_width="110dp"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/baselayout"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgDersResmi"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:scaleType="fitCenter"
+                android:src="@android:drawable/ic_dialog_dialer" />
+
+            <TextView
+                android:id="@+id/lblDersAdi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblPuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/roundedtextviewkirmizi"
+            android:gravity="center_vertical|center_horizontal"
+            android:shadowColor="#000000"
+            android:shadowRadius="4"
+            android:singleLine="true"
+            android:text="10"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
